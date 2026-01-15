@@ -1,7 +1,6 @@
 FROM adminer:latest
 
-COPY start.sh /start.sh
-RUN chmod +x /start.sh
+COPY --chmod=755 start.sh /start.sh
 
 EXPOSE 8080
 
